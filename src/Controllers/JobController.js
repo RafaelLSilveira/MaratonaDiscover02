@@ -1,10 +1,9 @@
 const Job = require('../Model/Job')
 const Profile = require('../Model/Profile')
-const { remainingDays, calculateBudget } = require('../Utils/JobUtils')
+const { calculateBudget } = require('../Utils/JobUtils')
 
 module.exports = {
     async save(request, response){
-        // request.body { name: 'rafael', 'daily-hours': '0.7', 'total-hours': '4' }
         const {
             body: {
                 name,

@@ -27,10 +27,6 @@ module.exports = {
                 ? jobTotalHours + Number(job.dailyHours)
                 : jobTotalHours
 
-            // if(status === 'progress'){
-            //     jobTotalHours+= Number(job.dailyHours)
-            // }
-
             return {
                 ...job,
                 remaining,
